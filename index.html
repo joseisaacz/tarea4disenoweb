@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid bg-secondary">
+        <div class="p-6">
+            <h3 class="display-3 text-center text-light">Municipalidad de Desamparados</h3>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark">
+        <h6 class="display-6 text-center text-light p-2">Identificación del Propietario</h6>
+        <div class="row g-2">
+            <div class="col-3 p-3">
+
+                <label for="typeofid" class="text-light">Tipo de Cedula</label>
+                <select class="form-select" aria-label="Default select example" id="typeofid">
+                    <option value="fisica">Fisica</option>
+                    <option value="juridica">Juridica</option>
+                </select>
+
+            </div>
+            <div class="col-4 p-3">
+
+                <label for="id" class="text-light">Cedula</label>
+                <input type="number" class="form-control" id="id" maxlength="8">
+
+            </div>
+
+            <div class="col-5 p-3">
+
+                <label for="name" class="text-light">Apellidos y Nombre o Razon Social</label>
+                <input type="text" class="form-control" id="name" maxlength="8">
+
+            </div>
+
+
+        </div>
+        <div class="">
+            <div class="container-fluid ">
+                <div class="p-3">
+
+                    <label for="exampleFormControlTextarea1" class="form-label text-light">Domicilio Fiscal
+                        (Señas)</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                </div>
+                <div class="row g-2">
+                    <div class="col-4 p-3">
+
+                        <label for="state" class="form-label text-light">Provincia</label>
+                        <select class="form-select" aria-label="Default select example" id="state">
+                            <option selected>Seleccione una provincia</option>
+                        </select>
+
+                    </div>
+                    <div class="col-4 p-3">
+                        <label for="cantons" class="form-label text-light">Canton</label>
+                        <select class="form-select" aria-label="Default select example" id="cantons">
+                        </select>
+                    </div>
+                    <div class="col-4 p-3">
+                        <label for="cantons" class="form-label text-light">Distrito</label>
+                        <select class="form-select" aria-label="Default select example" id="district">
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-6 p-3">
+                        <label for="phone" class="form-label text-light">Telefono</label>
+                        <input type="tel" name="phone" id="phone" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="email" class="form-label text-light">Email</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary visually-hidden" id="legalStuff">
+        <h6 class="display-6 text-center text-light p-2">Datos Representante Legal</h6>
+        <div class="row g-2">
+
+            <div class="col-6 p-3">
+
+                <label for="lawyerid" class="text-light">Cedula</label>
+                <input type="number" class="form-control" id="lawyerid" maxlength="8">
+
+            </div>
+
+            <div class="col-6 p-3">
+
+                <label for="lawyername" class="text-light">Nombre y Apellidos</label>
+                <input type="text" class="form-control" id="lawyername" maxlength="8">
+
+            </div>
+
+
+        </div>
+        <div class="">
+            <div class="container-fluid ">
+                <div class="p-3">
+
+                    <label for="lawyerexampleFormControlTextarea1" class="form-label text-light">Domicilio Fiscal
+                        (Señas)</label>
+                    <textarea class="form-control" id="lawyerexampleFormControlTextarea1" rows="3"></textarea>
+
+                </div>
+                <div class="row g-2">
+                    <div class="col-4 p-3">
+
+                        <label for="lawyerstate" class="form-label text-light">Provincia</label>
+                        <select class="form-select" aria-label="Default select example" id="lawyerstate">
+                            <option selected>Seleccione una provincia</option>
+                        </select>
+
+                    </div>
+                    <div class="col-4 p-3">
+                        <label for="cantons" class="form-label text-light">Canton</label>
+                        <select class="form-select" aria-label="Default select example" id="lawyercantons">
+                        </select>
+                    </div>
+                    <div class="col-4 p-3">
+                        <label for="cantons" class="form-label text-light">Distrito</label>
+                        <select class="form-select" aria-label="Default select example" id="lawyerdistrict">
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-6 p-3">
+                        <label for="lawyerphone" class="form-label text-light">Telefono</label>
+                        <input type="tel" name="lawyerphone" id="lawyerphone" class="form-control">
+                    </div>
+                    <div class="col-6 p-3">
+                        <label for="lawyeremail" class="form-label text-light">Email</label>
+                        <input type="email" name="lawyeremail" id="lawyeremail" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-success">
+        <h6 class="display-6 text-center text-light p-2">Indentificación de la Propiedad</h6>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="propertydistrict" class="form-label text-light">Distrito</label>
+                <select class="form-select" aria-label="Default select example" id="propertydistrict">
+                </select>
+            </div>
+            <div class="col-8 p-3">
+                <label for="propertylocation" class="form-label text-light">Dirección Exacta</label>
+                <textarea class="form-control" id="propertylocation" rows="1"></textarea>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="propertynumber" class="form-label text-light">Numero de Finca</label>
+                <input class="form-control" id="propertynumber" type="number"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyplane" class="form-label text-light">Numero de plano catastro</label>
+                <input class="form-control" id="propertyplane" type="number"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyarea" class="form-label text-light">Area en metros cuadrados</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-3 p-3">
+                <label class="form-label text-light">Servicios Publicos que posee</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="acera">
+                    <label class="form-check-label text-light" for="defaultCheck1">
+                        Acera
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cano">
+                    <label class="form-check-label text-light" for="defaultCheck2">
+                        Cordón y caño
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="caneria">
+                    <label class="form-check-label text-light" for="defaultCheck1">
+                        Cañeria
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="alcantarillado">
+                    <label class="form-check-label text-light" for="defaultCheck2">
+                        Alcantarillado
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="telefono">
+                    <label class="form-check-label text-light" for="defaultCheck1">
+                        Teléfono
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="electricidad">
+                    <label class="form-check-label text-light" for="defaultCheck2">
+                        Electricidad
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="alumbrado">
+                    <label class="form-check-label text-light" for="defaultCheck1">
+                        Alumbrado Público
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="all">
+                    <label class="form-check-label text-light" for="defaultCheck2">
+                        Todos los anteriores
+                    </label>
+                </div>
+            </div>
+            <div class="col-3 p-3">
+                <label for="via" class="form-label text-light">Via Acceso Principal</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Camino asfaltado</option>
+                    <option value="">Camino de lastre</option>
+                    <option value="">Linea Ferrea</option>
+                    <option value="">Alameda</option>
+                    <option value="">Camino de tierra</option>
+                    <option value="">Servidumbre</option>
+                </select>
+            </div>
+            <div class="col-3 p-3">
+                <label for="propertyarea" class="form-label text-light">Frente de Propiedad (metros)</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-3 p-3">
+                <label for="via" class="form-label text-light">Regularidad</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Regular</option>
+                    <option value="">Irregular</option>
+                </select>
+                <label for="" class="form-label text-light">Percentage</label>
+                <input type="number" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="via" class="form-label text-light">Pendiente</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Plano (0-5%)</option>
+                    <option value="">Ondulado (5-15%)</option>
+                    <option value="">Accidentado (16-30%)</option>
+                    <option value="">Muy Accidentado (30-45%)</option>
+                    <option value="">Quebrado (45-60%)</option>
+                    <option value="">Muy quebrado (mas de 60%)</option>
+                </select>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyplane" class="form-label text-light">Nivel</label>
+                <input class="form-control" id="propertyplane" type="number"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="via" class="form-label text-light">Ubicacion en la Manzana</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Manzanero</option>
+                    <option value="">Cabecero</option>
+                    <option value="">Medianero</option>
+                    <option value="">Esquinero</option>
+                    <option value="">Medianero con 2 frentes</option>
+                    <option value="">En callejon al fondo</option>
+                    <option value="">En callejon lateral</option>
+                </select>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="via" class="form-label text-light">Hidrologia</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Excelente</option>
+                    <option value="">Muy Bueno</option>
+                    <option value="">Bueno</option>
+                    <option value="">Regular</option>
+                    <option value="">Malo</option>
+                </select>
+            </div>
+            <div class="col-4 p-3">
+                <label for="via" class="form-label text-light">Uso de Suelo</label>
+                <select class="form-select" aria-label="Default select example" id="via">
+                    <option value="">Excelente</option>
+                    <option value="">Muy Bueno</option>
+                    <option value="">Bueno</option>
+                    <option value="">Regular</option>
+                    <option value="">Malo</option>
+                </select>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyplane" class="form-label text-light">Precio por Metro cuadrado</label>
+                <input class="form-control" id="propertyplane" type="number"></input>
+                <label for="propertyplane" class="form-label text-light">Precio por Hectarea</label>
+                <input class="form-control" id="propertyplane" type="number"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary">
+        <h6 class="display-6 text-center text-light p-2">Descripción de construcciones, instalaciones y obras complementarias</h6>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="propertyarea" class="form-label text-light">Uso</label>
+                <input type="text" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-2 p-3">
+                <label for="propertyarea" class="form-label text-light">Edad Actual</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyarea" class="form-label text-light">Estado</label>
+                <input type="text" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-2 p-3">
+                <label for="propertyarea" class="form-label text-light">Numero de Pisos</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-3 p-3">
+                <label for="propertyarea" class="form-label text-light">Numero Aposentos</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-3 p-3">
+                <label for="propertyarea" class="form-label text-light">Area de Construccion</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-3 p-3">
+                <label for="propertyarea" class="form-label text-light">Valor por m2</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-3 p-3">
+                <label for="propertyarea" class="form-label text-light">Valor de Construccion</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-5 p-3">
+                <label for="propertyarea" class="form-label text-light">Descripcion Obra</label>
+                <textarea class="form-control" id="lawyerexampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="col-2 p-3">
+                <label for="propertyarea" class="form-label text-light">Paredes Externas</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+                <label for="propertyarea" class="form-label text-light">Paredes Internas</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-2 p-3">
+                <label for="propertyarea" class="form-label text-light">Cubierta</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-1 p-3">
+                <label for="propertyarea" class="form-label text-light">Cielos</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-1 p-3">
+                <label for="propertyarea" class="form-label text-light">Pisos</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+            <div class="col-1 p-3">
+                <label for="propertyarea" class="form-label text-light">Baños</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info">
+        <h6 class="display-6 text-center text-light p-2">Determinación del Valor</h6>
+        <div class="row g-2">
+            <div class="col-4 p-3">
+                <label for="propertynumber" class="form-label text-light">Valor total del Terreno</label>
+                <input class="form-control" id="propertynumber" type="number"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyplane" class="form-label text-light">Valor total de la Construcción</label>
+                <input class="form-control" id="propertyplane" type="number"></input>
+            </div>
+            <div class="col-4 p-3">
+                <label for="propertyarea" class="form-label text-light">Valor total del Terreno y Construcción</label>
+                <input type="number" class="form-control" id="propertyarea"></input>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./utilities.js"></script>
+</body>
+
+</html>
